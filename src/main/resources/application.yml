@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ptt
+server:
+  port: 7777
+
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  application-version: 1.0.0
+  application-description: 域名池
+
+domain: http://f.com  #默认地址前缀
+capacity: 0  #默认缓存容量
+expire: 30000  # 默认缓存超时时间
